@@ -6,4 +6,23 @@ return {
 
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
+  {
+    "copilot.lua",
+    opts = {
+      suggestion = {
+        enabled = true,
+        debounce = 75,
+        keymap = {
+          accept = "<C-l>",
+          accept_word = false,
+          accept_line = false,
+          next = "<C-.>",
+          prev = "<C-,>",
+          dismiss = "<C/>",
+        },
+      },
+
+    }
+  },
+  { import = "astrocommunity.pack.typescript" },
 }
